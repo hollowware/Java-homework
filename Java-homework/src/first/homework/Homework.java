@@ -12,7 +12,8 @@ public class Homework {
 		yourWeightOnOtherPlanets();
 		fahrenheitToCelsius();
 		humanKMI();
-		simpleCalculator();
+//		simpleCalculator();
+		getInput();
 	}
 
 	private static void checkSquarePrimeter() {
@@ -97,5 +98,18 @@ public class Homework {
 		answer = firstNumber + secondNumber; // -; *; /;
 		System.out.printf("Equals = %.2f%n", answer);
 	}
+
+	private static void getInput() {
+		System.out.println("--------------getInput----------------");
+		System.out.println("Enter your favourite week day: ");
+		Scanner userInput = new Scanner(System.in);
+		String weekDay = userInput.nextLine();
+		System.out.println("Your favourite week day is - " + weekDay + ".");
+		if (userInput.nextLine() == "5") {
+			System.out.println("All good");
+		}
+	}
+	
+
 
 }
