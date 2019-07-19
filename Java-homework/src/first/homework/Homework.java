@@ -105,11 +105,6 @@ public class Homework {
 		Scanner userInput = new Scanner(System.in);
 		String weekDay = userInput.nextLine();
 		System.out.println("Your favourite week day is - " + weekDay + ".");
-		if (userInput.nextLine() == "5") {
-			System.out.println("All good");
-		}
 	}
 	
-
-
 }
