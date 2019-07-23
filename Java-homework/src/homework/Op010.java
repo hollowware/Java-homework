@@ -18,7 +18,7 @@ public class Op010 {
 		Arrays.sort(myArray);
 		System.out.println(Arrays.toString(myArray));
 		////////////////
-		int arraySum = IntStream.of(myArray).sum();
+		int arraySum = IntStream.of(myArray).sum(); // use for for sum
 		System.out.println(arraySum);
 	}
 }

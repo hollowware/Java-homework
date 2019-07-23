@@ -44,7 +44,7 @@ public class Op008 {
 		System.out.println();
 	}
 	private static void byteCalculator() {
-		System.out.println("--------------Binary-Calculator----------------");
+		System.out.println("--------------Binary-Calculator----------------"); // SWITCH
 		int a = 15;
 		printBinary(a, 16);
 		int b = 3;

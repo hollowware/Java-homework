@@ -9,7 +9,7 @@ public class Op009 {
 	}
 
 	private static void op003Scanner() {
-		System.out.println("--------------Square Perimeter----------------");
+		System.out.println("--------------Square Perimeter----------------"); // enter scanner separate
 		Scanner myBorderLength = new Scanner(System.in); 
 		double borderLenght;
 		double perimeter;

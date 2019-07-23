@@ -24,6 +24,7 @@ public class Op012 {
 	}
 
 	private static void squareArea(int a) {
+		// scanner
 		int squareArea = a * a;
 		System.out.println("Square area is: " + squareArea);
 	}

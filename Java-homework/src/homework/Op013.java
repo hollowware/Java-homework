@@ -9,7 +9,7 @@ public class Op013 {
 		int factorial = 1;
 		int number = 10;
 		for(int i = 1; i <= number; i++){    
-			factorial = factorial * i;   
+			factorial = factorial * i;   // padirbeti
 //			1 = 1 * 1 (1)
 //			1 = 1 * 2 (2)
 //			2 = 2 * 3 (6)
