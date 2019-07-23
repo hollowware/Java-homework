@@ -2,7 +2,7 @@ package homework;
 
 import java.util.Arrays;
 
-public class Opa019 {
+public class Op019 {
 	public static void main(String[] args) {
 		int i;
 		int [] firstArray = new int [10];
