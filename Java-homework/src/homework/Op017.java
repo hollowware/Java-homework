@@ -3,10 +3,10 @@ package homework;
 public class Op017 {
 	public static void main(String[] args) {
 		int tableSize = 9;
-		printMultiplicationTable(tableSize);
+		printTable(tableSize);
 	}
 	
-	private static void printMultiplicationTable(int tableSize) {
+	private static void printTable(int tableSize) {
 		System.out.format("      ");
 		for ( int i = 1; i <= tableSize; i++ ) {
 			System.out.format("%4d",i);
