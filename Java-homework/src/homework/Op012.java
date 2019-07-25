@@ -36,7 +36,7 @@ public class Op012 {
 
 	private static void rectangleArea(int b, int c) {
 		int rectangleArea = b * c;
-		System.out.println("Circle area is: " + rectangleArea);
+		System.out.println("Rectangle area is: " + rectangleArea);
 	}
 
 }
