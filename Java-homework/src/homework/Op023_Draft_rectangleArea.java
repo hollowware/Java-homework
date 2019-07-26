@@ -17,7 +17,6 @@ public class Op023_Draft_rectangleArea {
 		borderB = scanner.nextInt();
 	}
 	
-	
 	public int countSquareArea () {
 		return borderA * borderB;
 	}

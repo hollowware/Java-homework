@@ -5,7 +5,6 @@ public class Op005 {
 		yourWeightOnOtherPlanets();
 	}
 	private static void yourWeightOnOtherPlanets() {
-		System.out.println("--------------System prints your weight on other planets----------------");
 		double myWeightOnEarth = 96;
 		double myWeightOnMercury = myWeightOnEarth * 0.38;
 		double myWeightOnVenus = myWeightOnEarth * 0.91;
@@ -15,7 +14,7 @@ public class Op005 {
 		double myWeightOnUranus = myWeightOnEarth * 0.92;
 		double myWeightOnNeptune = myWeightOnEarth * 1.19;
 		double myWeightOnPluto = myWeightOnEarth * 0.06;
-		System.out.format("Your weight on the Mercury is %.2f%n", myWeightOnMercury); // Can i add String after arg in Format method? // Error occur.
+		System.out.format("Your weight on the Mercury is %.2f%n", myWeightOnMercury);
 		System.out.format("Your weight on the Venus is %.2f%n", myWeightOnVenus);
 		System.out.format("Your weight on the Mars is %.2f%n", myWeightOnMars);
 		System.out.format("Your weight on the Jupiter is %.2f%n", myWeightOnJupiter);

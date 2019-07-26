@@ -3,16 +3,18 @@ package homework;
 import java.util.Scanner;
 
 public class Op009 {
+	
+	static Scanner myBorderLength = new Scanner(System.in);
+	static double borderLenght;
+	static double perimeter;
+	static double SquareArea;
+	
 	public static void main(String[] args) {
-//		op003Scanner();
+		op003Scanner();
 		op008Scanner();
 	}
 
 	private static void op003Scanner() {
-		System.out.println("--------------Square Perimeter----------------"); // enter scanner separate
-		Scanner myBorderLength = new Scanner(System.in); 
-		double borderLenght;
-		double perimeter;
 		System.out.println("Enter square border length baby: ");
 	    borderLenght = myBorderLength.nextDouble();
 	    perimeter = borderLenght * 4;
@@ -20,10 +22,6 @@ public class Op009 {
 	}
 
 	private static void op008Scanner() {
-		System.out.println("--------------Square Area----------------");
-		Scanner myBorderLength = new Scanner(System.in); 
-		double borderLenght;
-		double SquareArea;
 		System.out.println("Enter square border length baby: ");
 	    borderLenght = myBorderLength.nextDouble();
 	    SquareArea = borderLenght * borderLenght;
