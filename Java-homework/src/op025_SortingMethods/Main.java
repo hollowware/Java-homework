@@ -1,10 +1,8 @@
-package homework;
+package op025_SortingMethods;
 
-import java.util.Arrays;
-
-public class Op025_Main {
+public class Main {
 	public static void main (String[] args) {
-		Op025_Draft sorting = new Op025_Draft();
+		Draft sorting = new Draft();
 		sorting.generateArray ();
 		sorting.sortArray ();
 		sorting.insertionSortArray ();

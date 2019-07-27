@@ -1,8 +1,8 @@
-package homework;
+package op025_SortingMethods;
 
 import java.util.Arrays;
 
-public class Op025_Draft {
+public class Draft {
 	int [] myArray = new int [10000];
 	
 	public void generateArray () {

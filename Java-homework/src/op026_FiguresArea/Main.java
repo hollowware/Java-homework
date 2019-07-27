@@ -1,8 +1,8 @@
-package homework;
+package op026_FiguresArea;
 
-public class Op026_Main {
+public class Main {
 	public static void main (String[] args) {
-		Op026_Draft area = new Op026_Draft();
+		Draft area = new Draft();
 		area.squareArea (18);
 		area.circleArea (18);
 		area.rectangleArea(15, 15);

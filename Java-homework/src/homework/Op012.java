@@ -3,17 +3,23 @@ package homework;
 import java.util.Scanner;
 
 public class Op012 {
+	
+		public static Scanner myScanner = new Scanner(System.in);
+		public static int squareArea;
+		public static int rectangleArea;
+		public static int Scan;
+		public static int a, b, c;
+		public static double circleArea;
+		public static double Scan2;
+		public static double r;
+		
 	public static void main (String [] args) {
-		Scanner myScanner = new Scanner(System.in);
-		int Scan;
-		double Scan2;
 		System.out.println("Enter number for calculating square area: ");
 		Scan = myScanner.nextInt();
-		int a = Scan;
+		a = Scan;
 		System.out.println("Enter number for calculating circle area: ");
 		Scan2 = myScanner.nextInt();
-		double r = Scan2;
-		int b, c;
+		r = Scan2;
 		System.out.println("Enter first border length for calculating rectangle area: ");
 		b = myScanner.nextInt();
 		System.out.println("Enter second border length for calculating rectangle area: ");
@@ -24,18 +30,17 @@ public class Op012 {
 	}
 
 	private static void squareArea(int a) {
-		// scanner
-		int squareArea = a * a;
+		squareArea = a * a;
 		System.out.println("Square area is: " + squareArea);
 	}
 
 	private static void circleArea(double r) {
-		double circleArea = (r * r) * Math.PI;
+		circleArea = (r * r) * Math.PI;
 		System.out.println("Circle area is: " + circleArea);
 	}
 
 	private static void rectangleArea(int b, int c) {
-		int rectangleArea = b * c;
+		rectangleArea = b * c;
 		System.out.println("Rectangle area is: " + rectangleArea);
 	}
 

@@ -1,18 +1,15 @@
-package homework;
+package op023_RectangleArea;
 
 import java.util.Scanner;
 
-public class Op023_Draft_rectangleArea {
+public class Draft {
 	Scanner scanner = new Scanner (System.in);
 	int borderA;
 	int borderB;
 	
-	public void readFirstData () {
+	public void readData () {
 		System.out.println("Enter first rectangle border length: ");
 		borderA = scanner.nextInt();
-	}
-	
-	public void readSecondData () {
 		System.out.println("Enter second rectangle border length: ");
 		borderB = scanner.nextInt();
 	}

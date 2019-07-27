@@ -8,11 +8,11 @@ public class Op022 {
 
 	private static void findLongestStringElement(String[] array) {
 		int index = 0; 
-		int elementLength = array[0].length();
+		int firstElementLength = array[index].length();
 		for (int i = 0; i < array.length; i++ ) {        
-			if ( array[i].length() > elementLength ) {
+			if ( array[i].length() > firstElementLength ) {
 				index = i; 
-				elementLength = array[i].length();
+				firstElementLength = array[i].length();
 			}
 		}
 		System.out.println("Longest string element is: " + array[index]);

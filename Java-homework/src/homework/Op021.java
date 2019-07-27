@@ -2,7 +2,7 @@ package homework;
 
 import java.util.Arrays;
 
-public class Op021 {  // TODO
+public class Op021 {  
 	public static void main (String[] args) {
 		int [] random = new int [15];
 		generateRandomArray(random);

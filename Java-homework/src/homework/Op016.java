@@ -13,8 +13,8 @@ public class Op016 {
 				System.out.println("");
 			} 
 			if (i % 2 == 0) {
-				System.out.print(i + ", ");
 				EvenNumSum += i;
+				System.out.print(i + ", ");
 			}
 		}	
 		System.out.println("");

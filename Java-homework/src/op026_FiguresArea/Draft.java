@@ -1,6 +1,6 @@
-package homework;
+package op026_FiguresArea;
 
-public class Op026_Draft {
+public class Draft {
 	
 	int a;
 	int b;
