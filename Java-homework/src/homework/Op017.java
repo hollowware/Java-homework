@@ -6,7 +6,7 @@ public class Op017 {
 		printTable(tableSize);
 	}
 	
-	private static void printTable(int tableSize) {
+	private static void printTable(int tableSize) { // write to file.  read from file. TODO
 		System.out.format("      ");
 		for ( int i = 1; i <= tableSize; i++ ) {
 			System.out.format("%4d", i);

@@ -4,7 +4,7 @@ public class Op005 {
 	public static void main(String[] args) {
 		yourWeightOnOtherPlanets();
 	}
-	private static void yourWeightOnOtherPlanets() {
+	private static void yourWeightOnOtherPlanets() { // array.
 		double myWeightOnEarth = 96;
 		double myWeightOnMercury = myWeightOnEarth * 0.38;
 		double myWeightOnVenus = myWeightOnEarth * 0.91;

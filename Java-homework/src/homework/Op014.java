@@ -2,7 +2,7 @@ package homework;
 
 public class Op014 {
 	public static void main(String[] args) {
-		int elements = 50; // bigInt
+		int elements = 50;
 		int [] myArray = new int [elements];
 		myArray[0] = 0;
 		myArray[1] = 1;

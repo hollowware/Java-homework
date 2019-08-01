@@ -1,8 +1,5 @@
 package homework;
 
-import java.util.Arrays;
-import java.util.Random;
-
 public class Op015 {
 	public static void main (String[] args) {
 		int x = (int) (Math.random() * 100);

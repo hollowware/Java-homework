@@ -8,7 +8,7 @@ public class Draft {
 	int answer1;
 	double answer;
 	
-	public void squareArea (int a) {
+	public void squareArea (int a) { // abstrack classes. Abstract figure -> then construct contrete figures.
 		answer1 = a * a;
 		System.out.println("Square area is: " + answer1);
 	}

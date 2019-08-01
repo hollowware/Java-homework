@@ -11,7 +11,7 @@ public class Op011 {
 		int [][] myArray = new int [10][10];
 		for (int i = 0; i < myArray.length; i++) {
 			for (int j = 0; j < myArray.length; j++) {
-				if (i == j) {
+				if (i == j) {  // short hand if. TODO
 					myArray[i][j] = 1;
 				} else {
 					myArray[i][j] = 0;

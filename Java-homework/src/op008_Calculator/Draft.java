@@ -3,23 +3,23 @@ package op008_Calculator;
 import java.util.Scanner;
 
 public class Draft {
-	Scanner scan = new Scanner(System.in);
-	String operation;
-	String operator;
-	double a;
-	double b;
-	int c;
-	double result;
-	boolean boolResult;
-	int printBinResult;
+	private Scanner scan = new Scanner(System.in);
+	private String operation;
+	private String operator;
+	private double a;
+	private double b;
+	private int c;
+	private double result;
+	private boolean boolResult;
+	private int printBinResult;
 	
 	
 	public void switchCalc() {
-		System.out.println("Rule nr. 1 - Choose aritmetic, byte or logic operation. (Please type 'aritmetic', 'byte' or 'logic')");
+		System.out.println("Choose aritmetic, byte or logic operation. (Please type 'aritmetic', 'byte' or 'logic')");
 		operation = scan.next();
 		switch (operation) {
 		case "aritmetic":
-			aritmeticCalculator();       // When executed method automatically runs second method, why? (all methods same problem)
+			aritmeticCalculator();      
 			break;
 		case "byte":
 			byteCalculator();
@@ -30,10 +30,11 @@ public class Draft {
 			default: 
 				System.out.println("No no, watch rule nr. 1");
 		}
-		return;
+		System.exit(1);
 	}
 	
 	public void aritmeticCalculator() {
+		try {
 		System.out.println("Hey man, enter first number: ");
 		a = scan.nextDouble();
 		System.out.println("Hey man, enter second number: ");
@@ -64,7 +65,10 @@ public class Draft {
 			default:
 				System.out.println("Try again nerd.");
 		}
-		return;
+		} catch (Exception e) {
+			System.out.println("Try again nerd.");
+		}
+		System.exit(1);
 	}
 	
 	public void logicCalculator() {
@@ -89,15 +93,15 @@ public class Draft {
 			break;
 			default:
 				System.out.println("Try again nerd.");
-				return;
 		}
+		System.exit(1);
 	}
 	
 	public void byteCalculator() {
 		System.out.println("Hey man, enter number that you want to convert to binary: ");
 		c = scan.nextInt();
 		printBinary(c, 16);
-		return;
+		System.exit(1);
 	}
 	
 	public void printBinary(int value, int size) {
@@ -108,7 +112,6 @@ public class Draft {
 		}
 		
 		System.out.println();
-		return;
 	}
 	
 }

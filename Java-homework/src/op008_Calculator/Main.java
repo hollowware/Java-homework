@@ -6,6 +6,6 @@ public class Main {
 		calc.switchCalc();
 		calc.aritmeticCalculator();
 		calc.logicCalculator();
-		calc.byteCalculator();
+		calc.byteCalculator(); 
 	}
 }

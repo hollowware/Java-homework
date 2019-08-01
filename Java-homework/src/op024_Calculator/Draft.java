@@ -3,17 +3,23 @@ package op024_Calculator;
 import java.util.Scanner;
 
 public class Draft {
-	Scanner scanner = new Scanner (System.in);
-	int firstNum;
-	int secondNum;
-	int answer;
-	String symbol;
 	
-	public void chooseNumbers () {
+	private Scanner scanner = new Scanner (System.in);
+	private double firstNum;
+	private double secondNum;
+	private double answer;
+	private String symbol;
+	
+		public void chooseNumbers () {
+		try {
 		System.out.println("Enter first number: ");
-		firstNum = scanner.nextInt();
+		firstNum = scanner.nextDouble();
 		System.out.println("Enter second number: ");
-		secondNum = scanner.nextInt(); 
+		secondNum = scanner.nextDouble(); 
+		} catch (Exception e) {
+			System.out.println("You're funny. Re-run the program.");
+			System.exit(1);
+		}
 	}
 	
 	public void chooseOperation () {
@@ -33,6 +39,10 @@ public class Draft {
 			System.out.println("Answer is: " + answer);
 			break;
 		case "/":
+			if ( secondNum == 0 ) {
+				System.out.println("Dividing by zero is impossible. Run program again.");
+				System.exit(1);
+			}
 			answer = firstNum / secondNum;
 			System.out.println("Answer is: " + answer);
 			break;

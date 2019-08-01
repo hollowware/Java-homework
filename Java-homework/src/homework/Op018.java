@@ -20,7 +20,7 @@ public class Op018 {
 	private static void charAlphabet2() {
 		char[] alphabet = new char[26];
 		for( int i = 0; i < 26; i++ ) {
-			alphabet[i] = (char)( 'a' + i ); // How he knows what goes after 'a'? He knows about locale eng? 
+			alphabet[i] = (char)( 'a' + i ); 
 		}
 		System.out.println(alphabet); 
 	}

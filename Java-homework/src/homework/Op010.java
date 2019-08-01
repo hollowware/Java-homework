@@ -12,7 +12,7 @@ public class Op010 {
 	public static void main (String [] args) {
 		letsPlayArray();
 	}
-
+	
 	private static void letsPlayArray() {
 		for ( i = 0; i < myArray.length; i++)  {
 			myArray[i] = (int)(Math.random() * 1000);

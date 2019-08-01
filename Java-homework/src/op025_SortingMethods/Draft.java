@@ -3,7 +3,7 @@ package op025_SortingMethods;
 import java.util.Arrays;
 
 public class Draft {
-	int [] myArray = new int [10000];
+	int [] myArray = new int [10000]; // TODO oop, one object generate random array, other choosable sorting. 
 	
 	public void generateArray () {
 		for ( int i = 0; i < myArray.length; i++ ) {
