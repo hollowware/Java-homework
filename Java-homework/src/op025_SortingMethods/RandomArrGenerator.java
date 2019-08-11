@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class RandomArrGenerator {
 	
-	private int [] myArray = new int [100];
+	private int userChoice;
+	private int [] myArray = new int [userChoice];
 
 	public int [] generateArray () {
 		for ( int i = 0; i < myArray.length; i++ ) {
@@ -13,10 +14,10 @@ public class RandomArrGenerator {
 		System.out.println(Arrays.toString(myArray));
 		return myArray;
 	}
-
-	public int[] getMyArray() {
-		return myArray;
-	}
 	
+	public void setMyArray(int[] userChoice) {
+		this.myArray = userChoice;
+	}
+
 	
 }

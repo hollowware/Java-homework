@@ -2,13 +2,13 @@ package op026_FiguresArea;
 
 public class Draft {
 	
-	int a;
-	int b;
-	int r;
-	int answer1;
-	double answer;
+	private int a;
+	private int b;
+	private int r;
+	private int answer1;
+	private double answer;
 	
-	public void squareArea (int a) { // abstrack classes. Abstract figure -> then construct contrete figures.
+	public void squareArea (int a) { // abstract classes. Abstract figure -> then construct figures.
 		answer1 = a * a;
 		System.out.println("Square area is: " + answer1);
 	}

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Op020 {
 	public static void main (String[] args) {
-		String[] myArray = {"Sucks", "Cut", "Dog", "Cat", "Son", "Snake", "Bug", "Sun", "Cloud"};
+		String[] myArray = {"Deer", "Cut", "Dog", "Cat", "Son", "Snake", "Bug", "Sun", "Cloud"};
 		sortStringArray(myArray);
 		fastSortStringArray(myArray);
 	}

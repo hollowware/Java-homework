@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class Draft {
 	
-	private Scanner scanner = new Scanner (System.in);
 	private int borderA;
 	private int borderB;
 	
@@ -16,7 +15,7 @@ public class Draft {
 	}
 	
 	public void readData () {
-		try {
+		try (Scanner scanner = new Scanner (System.in)) {
 		System.out.println("Enter first rectangle border length: ");
 		borderA = scanner.nextInt();
 		checkData();
@@ -36,5 +35,5 @@ public class Draft {
 	public void printData () {
 		System.out.println("Rectangle area for the choosen border lengths is: " + countSquareArea());
 	}
-	
+
 }

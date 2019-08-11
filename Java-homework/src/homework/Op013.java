@@ -5,7 +5,7 @@ public class Op013 {
 		factorial();
 	}
 
-	private static void factorial() {
+	private static void factorial() { //TODO big int
 		int factorial = 1;
 		int number = 10;
 		for(int i = 1; i <= number; i++){    

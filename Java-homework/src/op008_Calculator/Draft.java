@@ -3,6 +3,7 @@ package op008_Calculator;
 import java.util.Scanner;
 
 public class Draft {
+	
 	private Scanner scan = new Scanner(System.in);
 	private String operation;
 	private String operator;
