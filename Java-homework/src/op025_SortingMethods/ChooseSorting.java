@@ -4,15 +4,9 @@ import java.util.Arrays;
 
 public class ChooseSorting {
 	
-	int i;
-	RandomArrGenerator myRandomArray = new RandomArrGenerator();
-	int [] arrayForSorting = myRandomArray.setMyArray();
+	private int i;
 	
-	public void printArray () {
-		System.out.println(Arrays.toString(arrayForSorting));
-	}
-	
-	public void insertionSortArray () {
+	public void insertionSortArray (int [] arrayForSorting) {
 		for ( i = 1; i < arrayForSorting.length; i++ ) {
 			int key = arrayForSorting[i];
 			int previousKey = i - 1;
@@ -26,7 +20,7 @@ public class ChooseSorting {
 	}
 	
 	
-	public void bubbleSortArray () {
+	public void bubbleSortArray (int [] arrayForSorting) {
 		for ( i = arrayForSorting.length; i >= 0; i--) {
             for ( int j = 0; j < arrayForSorting.length - 1; j++) {
                 int index = j + 1;
@@ -41,7 +35,7 @@ public class ChooseSorting {
 		System.out.println("Bubble sort: " + (Arrays.toString(arrayForSorting)));
 	}
 	
-	public void simpleSortArray () {
+	public void simpleSortArray (int [] arrayForSorting) {
 		Arrays.sort(arrayForSorting);
 		System.out.println("Simple sort: " + (Arrays.toString(arrayForSorting)));
 	}

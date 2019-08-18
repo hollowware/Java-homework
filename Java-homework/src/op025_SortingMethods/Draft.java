@@ -1,9 +1,22 @@
 package op025_SortingMethods;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
-public class Draft {
-	int [] myArray = new int [10000]; // TODO oop, one object generate random array, other choosable sorting. 
+public class Draft { // Split classes, TODO.
+
+	Scanner scan = new Scanner(System.in);
+	private int userArrayLength;
+	
+	public int userArrayLengthInput () {
+		while (userArrayLength < 10 || userArrayLength > 100 ) {
+		System.out.println("Hello, please enter array lenth of your choice between numbers 10 and 100: ");
+		userArrayLength = scan.nextInt();
+		}
+		return userArrayLength;
+	}
+	
+	int [] myArray = new int [userArrayLengthInput ()]; 
 	
 	public void generateArray () {
 		for ( int i = 0; i < myArray.length; i++ ) {
@@ -12,9 +25,22 @@ public class Draft {
 		System.out.println(Arrays.toString(myArray));
 	}
 	
-	public void sortArray () {
-		Arrays.sort(myArray);
-		System.out.println("1 - " + (Arrays.toString(myArray)));
+	public void userSortingChoice () {
+		System.out.println("Now please choose which sorting method you prefer - insertion, bubble or fast.");
+		String choosedSortingMethod = scan.next();
+		switch (choosedSortingMethod) {
+		case "insertion":
+			insertionSortArray();
+			break;
+		case "bubble":
+			bubbleSortArray();
+			break;
+		case "fast":
+			simpleSortArray();
+			break;
+			default:
+				System.out.println("Error, please re-run the program");
+		}
 	}
 	
 	public void insertionSortArray () {
@@ -27,11 +53,27 @@ public class Draft {
 			}
 			myArray[previousKey + 1] = key;
 		}
-		System.out.println("2 - " + (Arrays.toString(myArray)));
+		System.out.println("Insertion sort: " + (Arrays.toString(myArray)));
 	}
 	
-	public void quickSortArray () { // TODO
-		
+	public void bubbleSortArray () {
+		for ( int i = myArray.length; i >= 0; i--) {
+            for ( int j = 0; j < myArray.length - 1; j++) {
+                int index = j + 1;
+                if (myArray[j] > myArray[index]) {
+                    int temp;
+                    temp = myArray[j];
+                    myArray[j] = myArray[index];
+                    myArray[index] = temp;
+                }
+            }
+        }
+		System.out.println("Bubble sort: " + (Arrays.toString(myArray)));
+	}
+	
+	public void simpleSortArray () {
+		Arrays.sort(myArray);
+		System.out.println("Simple sort: " + (Arrays.toString(myArray)));
 	}
 	
 	

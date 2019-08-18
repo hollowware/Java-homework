@@ -2,47 +2,35 @@ package op025_SortingMethods;
 
 import java.util.Scanner;
 
-public class UserScan extends ChooseSorting { // shoots stackOverFlow because of extending. TODO
+public class UserScan extends ChooseSorting {
 	
-	private int userArrayLength;
-	private String choosedSortingMethod;
-
-	public int userInput () {
-		try (Scanner scan = new Scanner(System.in)) {
+	private static Scanner scan = new Scanner(System.in);
+	private static int userArrayLength;
+	
+	public int userArrayLengthInput () {
+		while (userArrayLength < 10 || userArrayLength > 100 ) {
 		System.out.println("Hello, please enter array lenth of your choice between numbers 10 and 100: ");
 		userArrayLength = scan.nextInt();
-		if (userArrayLength < 10 || userArrayLength > 100 ) {
-			System.out.println("Error, please re-run the program");
-			System.exit(1);
 		}
+		return userArrayLength;
+	}
+	
+	public void userSortingChoice () {
 		System.out.println("Now please choose which sorting method you prefer - insertion, bubble or fast.");
-		choosedSortingMethod = scan.next();
+		String choosedSortingMethod = scan.next();
 		switch (choosedSortingMethod) {
 		case "insertion":
-			insertionSortArray();
+			insertionSortArray(new RandomArrGenerator().getMyArray());
 			break;
 		case "bubble":
-			bubbleSortArray();
+			bubbleSortArray(new RandomArrGenerator().getMyArray());
 			break;
 		case "fast":
-			simpleSortArray();
+			simpleSortArray(new RandomArrGenerator().getMyArray());
 			break;
 			default:
 				System.out.println("Error, please re-run the program");
 		}
-		} catch (Exception e) {
-			System.out.println("Error, please re-run the program");
-			System.exit(1);
-		}
-		return userArrayLength;
-	}
-
-	public int getUserArrayLength() {
-		return userArrayLength;
-	}
-
-	public void setUserArrayLength(int userArrayLength) {
-		this.userArrayLength = userArrayLength;
 	}
 	
 	

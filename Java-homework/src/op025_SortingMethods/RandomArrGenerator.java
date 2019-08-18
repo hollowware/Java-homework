@@ -2,10 +2,9 @@ package op025_SortingMethods;
 
 import java.util.Arrays;
 
-public class RandomArrGenerator {
+public class RandomArrGenerator extends UserScan {
 	
-	private int userChoice;
-	private int [] myArray = new int [userChoice];
+	private static int [] myArray = new int [new UserScan().userArrayLengthInput()];
 
 	public int [] generateArray () {
 		for ( int i = 0; i < myArray.length; i++ ) {
@@ -14,10 +13,13 @@ public class RandomArrGenerator {
 		System.out.println(Arrays.toString(myArray));
 		return myArray;
 	}
-	
-	public void setMyArray(int[] userChoice) {
-		this.myArray = userChoice;
+
+	public int[] getMyArray() {
+		return myArray;
 	}
 
+	public void setMyArray(int[] myArray) {
+		this.myArray = myArray;
+	}
 	
 }

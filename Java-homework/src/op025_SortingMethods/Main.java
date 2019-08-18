@@ -3,14 +3,16 @@ package op025_SortingMethods;
 public class Main {
 	public static void main (String[] args) {
 		
-		UserScan scan = new UserScan ();
-		scan.userInput();
+		Draft draft = new Draft();
+		draft.userArrayLengthInput();
+		draft.generateArray();
+		draft.userSortingChoice();
 		
-		RandomArrGenerator randomArray = new RandomArrGenerator();
-//		randomArray.generateArray();
-		
-//		ChooseSorting a = new ChooseSorting();
-//		a.printArray();
+//		UserScan user = new UserScan();
+//		user.userArrayLengthInput();
+//		user.userSortingChoice();
+//		RandomArrGenerator array = new RandomArrGenerator();
+//		System.out.println(array.getMyArray());
 
 	
 	}	
