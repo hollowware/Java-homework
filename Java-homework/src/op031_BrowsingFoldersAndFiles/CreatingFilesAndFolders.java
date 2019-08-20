@@ -8,8 +8,8 @@ public class CreatingFilesAndFolders {
 	
 	public static void main(String[] args) throws IOException {
 		
-		createNewFolder();
-		createNewFile();
+//		createNewFolder();
+		createNewFile(); 
 		findAllFiles();
 	}
 

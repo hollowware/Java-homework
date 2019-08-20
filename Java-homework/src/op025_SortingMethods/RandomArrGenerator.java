@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class RandomArrGenerator extends UserScan {
 	
-	private static int [] myArray = new int [new UserScan().userArrayLengthInput()];
+	private int [] myArray = new int [new UserScan().userArrayLengthInput()];
 
 	public int [] generateArray () {
 		for ( int i = 0; i < myArray.length; i++ ) {

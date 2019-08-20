@@ -1,4 +1,4 @@
-package op028;
+package op028_Random_1000;
 
 import java.util.Arrays;
 
